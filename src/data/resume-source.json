@@ -1,0 +1,447 @@
+{
+  "picture": {
+    "hidden": false,
+    "url": "https://rxresu.me/api/uploads/019e2f04-c6f4-77e6-a0c6-448c715bd467/pictures/1781658835147.jpeg",
+    "size": 80,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0.5)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Joseph Alejo",
+    "headline": "Computer Science Student / Web Developer",
+    "email": "josephalejo1412@gmail.com",
+    "phone": "+63 99-3778-7394",
+    "location": "Tagum, Davao del Norte, PH",
+    "website": {
+      "url": "https://github.com/wrnzn",
+      "label": "https://github.com/wrnzn"
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "",
+    "icon": "",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>Computer Science student focused on applied AI/ML projects, with growing experience in web development, REST APIs, databases, and data analysis. I use AI tools heavily to learn, prototype, debug, and improve my work while building practical projects with Python, JavaScript, SQL, Node.js/Express, FastAPI, and machine learning workflows.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e2f1d-742f-750f-a9c2-0e11f2daf774",
+          "hidden": false,
+          "icon": "linkedin-logo",
+          "iconColor": "",
+          "network": "LinkedIn",
+          "username": "joseph-alejo-deocampo",
+          "website": {
+            "url": "https://linkedin.com/in/joseph-alejo-deocampo/",
+            "label": "linkedin.com/in/joseph-alejo-deocampo",
+            "inlineLink": false
+          }
+        },
+        {
+          "id": "019e2f1d-742f-750f-a9c2-1076bc2ef972",
+          "hidden": false,
+          "icon": "github-logo",
+          "iconColor": "",
+          "network": "GitHub",
+          "username": "wrnzn",
+          "website": {
+            "url": "https://github.com/wrnzn",
+            "label": "github.com/wrnzn",
+            "inlineLink": false
+          }
+        },
+        {
+          "id": "31780e74-7059-4560-83b7-768323b9c597",
+          "hidden": false,
+          "icon": "facebook-logo",
+          "iconColor": "",
+          "network": "Facebook",
+          "username": "joseph.alejo.10168",
+          "website": {
+            "url": "https://web.facebook.com/joseph.alejo.10168",
+            "label": "facebook.com/joseph.alejo.10168",
+            "inlineLink": false
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e2f1d-742e-717d-a333-9cb55db6dae4",
+          "hidden": false,
+          "company": "LuntiAI",
+          "position": "Project Developer (Agritech AI Web App)",
+          "location": "Tagum City, PH",
+          "period": "May 2026",
+          "website": {
+            "url": "https://owaruurawo-luntiai-crop-model.hf.space/app/",
+            "label": "Hugging Face Space",
+            "inlineLink": false
+          },
+          "description": "<p>Crop recommendation web app for Tagum City farming use cases.</p><ul><li>Built a FastAPI-based crop recommendation app using a scikit-learn Random Forest model trained on Philippine crop, soil, and climate data.</li><li>Created a mobile-friendly HTML/CSS/JavaScript interface with barangay soil profiles, weather data, confidence scores, and simple charts.</li><li>Helped prepare the project for deployment on Hugging Face Spaces with prediction, barangay, weather, and health-check endpoints.</li></ul>",
+          "roles": []
+        },
+        {
+          "id": "019e2f1d-742e-717d-a333-a0a741da7f86",
+          "hidden": false,
+          "company": "AparTrack",
+          "position": "Full-Stack Developer (Rental Management System)",
+          "location": "Tagum City, PH",
+          "period": "February 2026 - March 2026",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Rental management system for admin and tenant workflows.</p><ul><li>Worked on an Express.js and MySQL REST API for tenants, payments, penalties, deposits, utility bills, notifications, audit logs, and reports.</li><li>Added common backend features including JWT login, password hashing, role-based access checks, input validation, and centralized error handling.</li><li>Built vanilla JavaScript frontend pages for admin and tenant users, including role guards, API helpers, dashboard views, pagination, and Playwright UI tests.</li></ul>",
+          "roles": []
+        },
+        {
+          "id": "019e2f1d-742e-717d-a333-abcb474ea02f",
+          "hidden": false,
+          "company": "Sentisuri",
+          "position": "Developer (NLP + Frontend)",
+          "location": "",
+          "period": "May 2026",
+          "website": {
+            "url": "https://github.com/ace014/sentisuri",
+            "label": "github.com/ace014/sentisuri",
+            "inlineLink": false
+          },
+          "description": "<p>Sentiment analysis app for English, Tagalog, and Bisaya/Cebuano reviews.</p><ul><li>Built a basic NLP pipeline using TF-IDF features and Logistic Regression for sentiment classification.</li><li>Added code-switching and emoji-aware text processing to better handle mixed-language review text.</li><li>Created a FastAPI service and web interface for entering text, viewing predictions, and inspecting important words.</li></ul>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e2f1d-742e-717d-a333-ac0a495d123f",
+          "hidden": false,
+          "school": "University of Mindanao Tagum College",
+          "degree": "Bachelor of Science in Computer Science",
+          "area": "Computer Science",
+          "grade": "3rd Year",
+          "location": "Mabini Street, Brgy. Magugpo South, 8100 Tagum City, Davao del Norte, Philippines",
+          "period": "August 2023 - Present",
+          "website": {
+            "url": "https://tagum.umindanao.edu.ph",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "7bb89146-a856-4c7a-b5bb-daf4bef47490",
+          "hidden": false,
+          "name": "SafeSight AI",
+          "period": "May 2026",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Computer vision class project for detecting PPE safety issues in images and video.</p><ul><li>Trained and tested a YOLO11l object detection model on a construction safety dataset for helmets, vests, masks, people, and violation classes.</li><li>Prepared dataset checks and EDA notebooks using Pandas, Matplotlib, and Seaborn to review labels, class balance, and bounding boxes.</li><li>Built a Gradio demo and OpenCV webcam mode for running image, video, and live-camera safety checks.</li></ul>"
+        },
+        {
+          "id": "3ef026a0-8ccd-457c-a1b3-89691ac89036",
+          "hidden": false,
+          "name": "Skye Gaming Hub PC Cafe Simulator",
+          "period": "June 2026",
+          "website": {
+            "url": "https://huggingface.co/spaces/owaruurawo/pc-cafe-simulation",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Discrete-event simulation project for cybercafe PC capacity planning.</p><ul><li>Modeled 56 PC units in SimPy with customer arrivals, solo/group users, waiting time, session length, top-ups, early logouts, and queue abandonment.</li><li>Used Pandas, NumPy, and Plotly to summarize utilization, waiting time, queue length, full-capacity events, and lost demand.</li><li>Wrote project documentation and generated scenario outputs for weekday/weekend capacity planning.</li></ul>"
+        },
+        {
+          "id": "019e2f5d-d5dd-749d-ba4e-445139d54ec5",
+          "hidden": false,
+          "name": "Albion Toolkit",
+          "period": "March 2026",
+          "website": {
+            "url": "https://github.com/wrnzn/albion-toolkit",
+            "label": "GitHub profile",
+            "inlineLink": false
+          },
+          "description": "<p>Python utility for inspecting game market data and simple player decision support.</p><ul><li>Used Python, Pandas, NumPy, Requests/HTTPX, and Reflex to fetch, clean, and display market data.</li><li>Built reusable scripts for checking trends and comparing item data.</li></ul>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e2f1d-742e-717d-a333-b2d3616c1f9b",
+          "hidden": false,
+          "icon": "star",
+          "iconColor": "",
+          "name": "Programming Languages",
+          "proficiency": "Learning / Working Knowledge",
+          "level": 2,
+          "keywords": [
+            "Python",
+            "JavaScript",
+            "TypeScript basics",
+            "SQL",
+            "HTML",
+            "CSS"
+          ]
+        },
+        {
+          "id": "019e2f1d-742e-717d-a333-b6214815de43",
+          "hidden": false,
+          "icon": "star",
+          "iconColor": "",
+          "name": "Applied AI & Data",
+          "proficiency": "Focus Area",
+          "level": 3,
+          "keywords": [
+            "Scikit-Learn",
+            "Pandas",
+            "NumPy",
+            "Basic NLP",
+            "Random Forest",
+            "Logistic Regression",
+            "YOLO/Object Detection",
+            "SimPy",
+            "AI-assisted development"
+          ]
+        },
+        {
+          "id": "019e2f1d-742e-717d-a333-babe54b62833",
+          "hidden": false,
+          "icon": "star",
+          "iconColor": "",
+          "name": "Backend & Cloud",
+          "proficiency": "Learning / Project Experience",
+          "level": 2,
+          "keywords": [
+            "Node.js",
+            "Express.js",
+            "FastAPI",
+            "REST APIs",
+            "JWT Auth",
+            "RBAC basics",
+            "Render",
+            "Hugging Face Spaces"
+          ]
+        },
+        {
+          "id": "019e2f1d-742f-750f-a9c2-054167c7a1ff",
+          "hidden": false,
+          "icon": "star",
+          "iconColor": "",
+          "name": "Databases & Storage",
+          "proficiency": "Learning / Project Experience",
+          "level": 2,
+          "keywords": [
+            "MySQL",
+            "PostgreSQL",
+            "MongoDB",
+            "SQLite",
+            "Sequelize"
+          ]
+        },
+        {
+          "id": "019e2f1d-742f-750f-a9c2-0848bc8ba47b",
+          "hidden": false,
+          "icon": "star",
+          "iconColor": "",
+          "name": "Frontend, Testing & Tools",
+          "proficiency": "Learning / Project Experience",
+          "level": 2,
+          "keywords": [
+            "HTML/CSS",
+            "Vanilla JavaScript",
+            "React basics",
+            "Gradio",
+            "Plotly",
+            "OpenCV",
+            "Playwright basics",
+            "Jest basics",
+            "Git/GitHub"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019e2f60-0e3d-767f-a4ee-a2c5960fa1fd",
+          "hidden": false,
+          "language": "English",
+          "fluency": "Working Proficiency",
+          "level": 3
+        },
+        {
+          "id": "019e2f60-3099-71cf-a815-b4fc29fce6b8",
+          "hidden": false,
+          "language": "Tagalog",
+          "fluency": "Native",
+          "level": 5
+        },
+        {
+          "id": "019e2f60-6ab6-725f-9341-a715388cc240",
+          "hidden": false,
+          "language": "Bisaya",
+          "fluency": "Native",
+          "level": 5
+        }
+      ]
+    },
+    "interests": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "awards": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "publications": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "volunteer": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "onyx",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "profiles",
+            "summary",
+            "experience",
+            "projects",
+            "education",
+            "volunteer",
+            "references"
+          ],
+          "sidebar": [
+            "skills",
+            "certifications",
+            "awards",
+            "languages",
+            "publications",
+            "interests"
+          ]
+        }
+      ]
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 2,
+      "marginX": 14,
+      "marginY": 8,
+      "format": "a4",
+      "locale": "en-US",
+      "hideLinkUnderline": false,
+      "hideIcons": false,
+      "hideSectionIcons": true
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "hidden"
+      },
+      "colors": {
+        "primary": "rgba(79, 57, 246, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "400",
+          "600"
+        ],
+        "fontSize": 9,
+        "lineHeight": 1.25
+      },
+      "heading": {
+        "fontFamily": "Inter",
+        "fontWeights": [
+          "400",
+          "600"
+        ],
+        "fontSize": 9,
+        "lineHeight": 1.25
+      }
+    },
+    "notes": "",
+    "styleRules": []
+  }
+}
