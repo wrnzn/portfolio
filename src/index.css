@@ -120,18 +120,51 @@ a {
 }
 
 .site-header nav a {
+  position: relative;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  padding: 0 2px;
   color: var(--muted);
   font-size: 0.88rem;
   font-weight: 700;
   white-space: nowrap;
-  transition: color 180ms ease;
+  transition:
+    color 180ms ease,
+    text-shadow 180ms ease;
 }
 
-.site-header nav a:hover {
+.site-header nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  left: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 16px rgba(27, 166, 166, 0.38);
+  opacity: 0;
+  transform: scaleX(0.45);
+  transform-origin: center;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a.is-active {
   color: var(--ink);
+}
+
+.site-header nav a.is-active {
+  color: var(--accent-deep);
+  text-shadow: 0 0 18px rgba(27, 166, 166, 0.28);
+}
+
+.site-header nav a.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .hero-section {
@@ -222,35 +255,35 @@ h2 {
 h1 {
   max-width: 9ch;
   font-size: clamp(4.2rem, 13vw, 12.5rem);
-  line-height: 0.82;
+  line-height: 0.9;
 }
 
 h2 {
   max-width: 12ch;
   font-size: clamp(2.4rem, 6vw, 5.8rem);
-  line-height: 0.95;
+  line-height: 1.04;
 }
 
 h3 {
   font-size: clamp(1.35rem, 2.3vw, 2rem);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.16;
 }
 
 .hero-lede {
   max-width: 760px;
-  margin: 26px 0 0;
+  margin: 30px 0 0;
   font-size: clamp(1.35rem, 3vw, 2.45rem);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.17;
 }
 
 .hero-summary {
   max-width: 690px;
-  margin: 22px 0 0;
+  margin: 24px 0 0;
   color: var(--muted);
   font-size: clamp(1rem, 1.4vw, 1.15rem);
-  line-height: 1.7;
+  line-height: 1.78;
 }
 
 .hero-actions,
@@ -399,7 +432,7 @@ h3 {
 .contact-section p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.78;
 }
 
 .content-section {
@@ -411,12 +444,12 @@ h3 {
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
   gap: clamp(24px, 6vw, 74px);
   align-items: end;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 
 .section-header .eyebrow {
   grid-column: 1 / -1;
-  margin-bottom: -8px;
+  margin-bottom: -2px;
 }
 
 .section-header p:not(.eyebrow) {
@@ -670,7 +703,7 @@ h3 {
   max-width: 11ch;
   font-family: "Fraunces", Georgia, serif;
   font-size: clamp(2.6rem, 6vw, 5.4rem);
-  line-height: 0.88;
+  line-height: 0.98;
 }
 
 .mockup-lines {
@@ -770,14 +803,15 @@ h3 {
 
 .about-copy {
   display: grid;
-  gap: 18px;
+  gap: 22px;
   font-size: clamp(1rem, 1.35vw, 1.2rem);
 }
 
 .contact-section h2 {
   max-width: 760px;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.08;
 }
 
 .contact-section {

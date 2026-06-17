@@ -176,7 +176,7 @@
         {
           "id": "3ef026a0-8ccd-457c-a1b3-89691ac89036",
           "hidden": false,
-          "name": "Skye Gaming Hub PC Cafe Simulator",
+          "name": "PC Cafe Capacity Simulation",
           "period": "June 2026",
           "website": {
             "url": "https://huggingface.co/spaces/owaruurawo/pc-cafe-simulation",
@@ -191,8 +191,8 @@
           "name": "Albion Toolkit",
           "period": "March 2026",
           "website": {
-            "url": "https://github.com/wrnzn/albion-toolkit",
-            "label": "GitHub profile",
+            "url": "",
+            "label": "",
             "inlineLink": false
           },
           "description": "<p>Python utility for inspecting game market data and simple player decision support.</p><ul><li>Used Python, Pandas, NumPy, Requests/HTTPX, and Reflex to fetch, clean, and display market data.</li><li>Built reusable scripts for checking trends and comparing item data.</li></ul>"

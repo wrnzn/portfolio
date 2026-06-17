@@ -15,6 +15,7 @@ import { capabilities, contactLinks, featuredProjects, profile, resumeLinks } fr
 import type { Project } from './data/portfolioData';
 
 const navItems = ['Work', 'Skills', 'About', 'Contact'];
+const sectionIds = navItems.map((item) => item.toLowerCase());
 
 const capabilityIcons = [Code2, BrainCircuit, Server, Database];
 const marqueeItems = [
@@ -54,6 +55,10 @@ type LightboxImage = {
   src: string;
   alt: string;
   projectName: string;
+};
+
+type RevealStyle = CSSProperties & {
+  '--reveal-delay': string;
 };
 
 function ProjectVisual({ project, onImageOpen }: { project: Project; onImageOpen: (image: LightboxImage) => void }) {
@@ -113,7 +118,7 @@ function ProjectCard({ project, index, onImageOpen }: { project: Project; index:
   return (
     <article
       className={`project-card ${index < 2 ? 'project-card--large' : ''}`}
-      style={{ '--reveal-delay': `${Math.min(index * 55, 220)}ms` } as CSSProperties}
+      style={{ '--reveal-delay': `${Math.min(index * 55, 220)}ms` } as RevealStyle}
     >
       <div className="project-copy">
         <div className="project-meta">
@@ -190,6 +195,34 @@ function ImageLightbox({ image, onClose }: { image: LightboxImage | null; onClos
 
 function App() {
   const [activeImage, setActiveImage] = useState<LightboxImage | null>(null);
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const updateActiveSection = () => {
+      const anchorY = window.scrollY + window.innerHeight * 0.42;
+      const currentSection = sectionIds.reduce((current, sectionId) => {
+        const section = document.getElementById(sectionId);
+
+        if (!section) {
+          return current;
+        }
+
+        return section.offsetTop <= anchorY ? sectionId : current;
+      }, '');
+      const isAtPageEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
+
+      setActiveSection(isAtPageEnd ? sectionIds[sectionIds.length - 1] : currentSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    window.addEventListener('resize', updateActiveSection);
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveSection);
+      window.removeEventListener('resize', updateActiveSection);
+    };
+  }, []);
 
   return (
     <div className="site-shell">
@@ -198,11 +231,21 @@ function App() {
           <img src="/assets/joseph-retro-mark.webp" alt="" aria-hidden="true" />
         </a>
         <nav aria-label="Primary navigation">
-          {navItems.map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`}>
-              {item}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            const sectionId = item.toLowerCase();
+            const isActive = activeSection === sectionId;
+
+            return (
+              <a
+                key={item}
+                className={isActive ? 'is-active' : undefined}
+                href={`#${sectionId}`}
+                aria-current={isActive ? 'location' : undefined}
+              >
+                {item}
+              </a>
+            );
+          })}
         </nav>
       </header>
 
@@ -283,7 +326,7 @@ function App() {
                 <article
                   key={capability.title}
                   className="capability-card"
-                  style={{ '--reveal-delay': `${index * 60}ms` } as CSSProperties}
+                  style={{ '--reveal-delay': `${index * 60}ms` } as RevealStyle}
                 >
                   <Icon size={22} aria-hidden="true" />
                   <h3>{capability.title}</h3>
